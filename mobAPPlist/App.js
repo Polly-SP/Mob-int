@@ -1,5 +1,4 @@
-//используем библиотееку Экспо
-//
+
 import React, { useEffect, useState } from "react";
 import { AppLoading } from "expo";
 import {
@@ -8,7 +7,7 @@ import {
   Route,
   Switch,
 } from "react-router-native";
-//используем Нэйтив бэйс в качестве фрейм вока
+
 import { Container, Header, Body, Title } from "native-base";
 import { StyleSheet, Text, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
@@ -17,7 +16,7 @@ import * as Font from "expo-font";
 import { Wineries } from "./components/Wineries";
 import { WineryDetails } from "./components/Winery";
 
-// в главном компоненте мы объявляем загрузку приложения, для подгрузкки шрифтов
+
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -28,13 +27,13 @@ export default function App() {
         Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf"),
         ...Ionicons.font,
       });
-      //далее загружается приложение и ставим флаг, загружается ли (нет не загнружается)
+    
       setIsLoading(false);
     };
     loadFonts();
   }, []);
 
-  // если загрузилось, то показывает загрузку и показывает Контент
+ 
   return isLoading ? (
     <AppLoading />
   ) : (
