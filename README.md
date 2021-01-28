@@ -12,3 +12,6 @@ ___Check installation___
 _Check that Yarn is installed by running:_
 
 yarn --version
+
+
+(https://classic.yarnpkg.com/en/docs/install#windows-stable)
