@@ -20,7 +20,7 @@ import { WineryDetails } from "./components/Winery";
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
-    //подружаются шрифты
+    
     const loadFonts = async () => {
       await Font.loadAsync({
         Roboto: require("native-base/Fonts/Roboto.ttf"),
