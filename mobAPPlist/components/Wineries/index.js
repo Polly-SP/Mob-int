@@ -28,7 +28,7 @@ export const Wineries = () => {
         <List>
           {data?.data?.map(({ id, name }) => {
             return (
-              //список винодельнь и карточка товара
+            
               <ListItem onPress={onItemPressed(id)} key={id}>
                 <Left>
                   <Text>{name}</Text>
